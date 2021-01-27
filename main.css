@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+#product-overview {
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") left 10% bottom 70% / cover no-repeat border-box;
+  width: 100vw;
+  height: 33vh;
+  padding: 0.7rem;
+  margin-top: 40px;
+  position: relative;
+}
+
+.section-title {
+  color: #1f3b1f;
+  text-align: center;
+}
+
+#product-overview h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  position: absolute;
+  bottom: 5%;
+  left: 2.5rem;
+  width: 50vw;
+}
+
+.plan__list {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.plan {
+  background-color: #ebc682;
+  color: white;
+  font-weight: bolder;
+  padding: 1rem;
+  margin: 1.1rem;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 28%;
+}
+
+.plan__title {
+  color: #1d491d;
+}
+
+.plan--highlighted {
+  background-color: #ffbb3c;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.plan__annotation {
+  background-color: white;
+  color: #1f3b1f;
+  border-radius: 3px;
+  padding: 0.4rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__price {
+  color: #868f86;
+}
+
+.plan--highlighted .plan__price {
+  color: #1d491d;
+}
+
+.plan__detail {
+  margin: 8px 0;
+  font-weight: lighter;
+}
+
+.plan__details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#key-features {
+  background-color: #1f3b1f;
+  color: white;
+  margin-top: 5.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#key-features > .section-title {
+  color: white;
+  padding: 2rem;
+}
+
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.key-feature__image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: #ffbb3c;
+  border: 2px solid white;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.key-feature__description {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 50%;
+  background-color: white;
+  padding: 1.5rem;
+  border: 1px solid darkgreen;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  background: darkgreen;
+  border: 1px solid darkgreen;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:active,
+.modal__action:hover {
+  background: white;
+  color: darkgreen;
+}
+
+.modal__action--negative {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+
+.modal__action--negative:active,
+.modal__action--negative:hover {
+  background: white;
+  color: red;
+  border-color: red;
+}

@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main-header {
+  background-color: #1f3b1f;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  z-index: 1;
+}
+
+.main-nav__item {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 0.3rem 1.5rem 0.3rem 1.9rem;
+}
+
+.main-nav__item a,
+.mobile-nav__item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.2rem 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: #ebc682;
+  border-bottom: 2px solid #ebc682;
+}
+
+.main-nav__item--cta a,
+.mobile-nav__item--cta a {
+  color: white;
+  background-color: #ebc682;
+  padding: 0.3rem 0.6rem;
+  border-radius: 7px;
+}
+
+.main-nav__item--cta a:active,
+.main-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover {
+  background-color: white;
+  color: #1d491d;
+  border: none;
+}
+
+.main-header > div {
+  display: inline-block;
+}
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: white;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.main-header > div > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 148px);
+  vertical-align: middle;
+}
+
+.main-nav__items {
+  margin: 0;
+}
+
+.main-header__brand {
+  vertical-align: middle;
+  font-weight: bolder;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 25px;
+  display: inline-block;
+}
+
+.main-header__brand img {
+  height: 100%;
+}
+
+.main-footer {
+  background-color: black;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.main-footer__link a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+  color: darkgreen;
+}
+
+.button {
+  background-color: #1f3b1f;
+  font: inherit;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:active,
+.button:hover {
+  background-color: white;
+  color: #1f3b1f;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.open {
+  display: block !important;
+}
