@@ -44,11 +44,6 @@ body {
   text-align: center;
 }
 
-/* .plan__list {
-  width: 100%;
-  text-align: center;
-} */
-
 .plan {
   background-color: #ebc682;
   color: white;
@@ -56,7 +51,6 @@ body {
   padding: 1rem;
   margin: 0.5rem 0;
   text-align: center;
-  vertical-align: middle;
   width: 100%;
 }
 
@@ -66,7 +60,6 @@ body {
 
 .plan--highlighted {
   background-color: #ffbb3c;
-  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4); */
 }
 
 .plan__annotation {
@@ -95,6 +88,24 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: 40rem) {
+  .plan__list {
+    width: 100%;
+    text-align: center;
+  }
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 13rem;
+    max-width: 25rem;
+  }
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
 #key-features {
   background-color: #1f3b1f;
   color: white;
