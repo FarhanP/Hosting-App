@@ -29,11 +29,15 @@ body {
   z-index: 1;
 }
 
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .main-nav__item {
-  text-decoration: none;
-  color: white;
   display: inline-block;
-  padding: 0.3rem 1.5rem 0.3rem 1.9rem;
+  margin: 0 16px;
 }
 
 .main-nav__item a,
