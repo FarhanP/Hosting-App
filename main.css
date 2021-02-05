@@ -22,13 +22,13 @@ body {
   position: absolute;
   bottom: 5%;
   left: 3%;
-  width: 50vw;
+  width: 90vw;
   font-size: 1.6rem;
 }
 
 /* Media queries for Desktop version of the website */
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (min-height: 50rem) {
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
@@ -116,7 +116,7 @@ body {
 
 #key-features > .section-title {
   color: white;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 .key-feature__list {
