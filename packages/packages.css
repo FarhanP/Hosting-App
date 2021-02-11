@@ -79,3 +79,25 @@ main {
 #premium {
   background-color: #f3a618;
 }
+
+@media (min-width: 40rem) {
+  main {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .plan-detail {
+    border-left: 4px solid green;
+  }
+
+  #free {
+    border-right: 4px solid green;
+  }
+  #free:hover,
+  #free:active {
+    border-right-color: green;
+  }
+}
