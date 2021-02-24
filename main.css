@@ -12,7 +12,6 @@ body {
     url("images/freedom.jpg") center / cover no-repeat border-box;
   width: 100vw;
   height: 33vh;
-  margin-top: 2.9rem;
   position: relative;
 }
 
@@ -28,7 +27,7 @@ body {
 
 /* Media queries for Desktop version of the website */
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
@@ -116,7 +115,7 @@ body {
 
 #key-features > .section-title {
   color: white;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 .key-feature__list {
